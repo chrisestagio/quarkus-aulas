@@ -1,6 +1,9 @@
 package org.acme;
 
-public class Aula {
+import jakarta.persistence.Entity;
+import io.quarkus.hibernate.orm.panache.PanacheEntity;
+
+public class Aula extends PanacheEntity {
     public int id;
     public String nome;
     public String estilo;
